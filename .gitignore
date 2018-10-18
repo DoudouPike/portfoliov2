@@ -1,0 +1,36 @@
+
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+Supprimerait .env.dist
+Supprimerait .gitignore
+Supprimerait .idea/inspectionProfiles/
+Supprimerait .idea/misc.xml
+Supprimerait .idea/modules.xml
+Supprimerait .idea/portfoliov2.iml
+Supprimerait .idea/workspace.xml
+Supprimerait bin/
+Supprimerait composer.json
+Supprimerait composer.lock
+Supprimerait config/
+Supprimerait phpunit.xml.dist
+Supprimerait public/
+Supprimerait src/
+Supprimerait symfony.lock
+Supprimerait templates/
+Supprimerait tests/
+Supprimerait translations/
+
+.idea
