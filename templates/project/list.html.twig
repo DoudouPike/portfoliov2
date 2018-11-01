@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'projects.list'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <p>{{ 'projects.list'|trans }}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            {{ dump(projects) }}
+        </div>
+    </div>
+{% endblock %}
