@@ -12,20 +12,21 @@ const $ = require('jquery');
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
-import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue'
+// import Vue from 'vue';
 import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+// import BootstrapVue from 'bootstrap-vue'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-import App from './App'
+// import App from './App'
 
-Vue.use(BootstrapVue);
+// Vue.use(BootstrapVue);
 
 /**
  * Create a fresh Vue Application instance
  */
+/*
 new Vue({
     el: '#app',
     template: '<App/>',
     components: { App }
-});
+});*/
