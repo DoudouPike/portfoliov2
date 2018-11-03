@@ -1,24 +1,19 @@
-/*
- * Welcome to your app's main JavaScript file!
- *
- * We recommend including the built version of this JavaScript file
- * (and its CSS file) in your base layout (base.html.twig).
- */
-
-// any CSS you require will output into a single css file (app.css in this case)
+//** Required scripts **//
+require('../plugins/fontawesome-5.5.0/css/solid.min.css');
+require('../plugins/fontawesome-5.5.0/css/regular.min.css');
+require('../plugins/fontawesome-5.5.0/css/fontawesome.min.css');
+require('bootstrap/dist/css/bootstrap.min.css');
+require('../scss/app.scss');
 require('../css/app.css');
 
-const $ = require('jquery');
+//const $ = require('jquery');
 
-console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
+//** Vue.js - https://vuejs.org/ **//
 // import Vue from 'vue';
-import 'bootstrap/dist/css/bootstrap.css'
 // import BootstrapVue from 'bootstrap-vue'
 // import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 // import App from './App'
-
 // Vue.use(BootstrapVue);
 
 /**
