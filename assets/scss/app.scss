@@ -1,0 +1,28 @@
+$color-background: rgb(36, 36, 36);
+$color-logo: rgb(27, 27, 27);
+$color-light: rgb(240, 240, 240);
+
+body {
+  font-size: 14px;
+  color: $color-light !important;
+  background-color: $color-background !important;
+}
+
+#topbar {
+  background-color: $color-logo;
+
+  #logo {
+    width: 2vw;
+  }
+}
+
+#main {
+  margin-top: 5vh;
+  padding: 0 5vw;
+}
+
+#information {
+  position: fixed;
+  right: 4%; bottom: 4%;
+  font-size: 1.2rem;
+}
