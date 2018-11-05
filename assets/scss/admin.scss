@@ -1,0 +1,41 @@
+$color-background: rgba(0, 27, 137, 0.68);
+$color-blue: rgba(35, 80, 159, 0.77);
+$color-light: rgb(255, 255, 255);
+$width-sidebar : 150px;
+
+#admin {
+  font-size: 14px;
+  color: $color-light !important;
+  background-color: $color-background !important;
+
+  .wrapper {
+      display: flex;
+      width: 100%;
+      align-items: stretch;
+
+    #sidebar {
+        background-color: $color-blue;
+        width: $width-sidebar;
+        min-height: 100vh;
+
+        #sidebar-header {
+            display: flex;
+
+            #logo-link {
+                margin: 20px auto;
+
+                #logo {
+                    border-radius: 50%;
+                    width: 2vw;
+                }
+            }
+        }
+        .nav a {
+          color: $color-light;
+        }
+    }
+
+    #content {
+    }
+  }
+}

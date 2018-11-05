@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DoudouPike | {% block title %}Admin{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/admin.css') }}">
+    {% endblock %}
+</head>
+<body id="admin">
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div id="sidebar-header">
+                <a id="logo-link" href="{{ path('App_index') }}">
+                    <img id="logo" src="{{ asset('uploads/logo.gif') }}" alt="logo_DoudouPike">
+                </a>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ path('Admin_index') }}">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('Project_list') }}">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Images</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Technologies</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="content" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    {% for flashMessage in app.session.flashbag.get('success') %}
+                        <div class="alert alert-success" role="alert">
+                            {{ flashMessage }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col">
+                    {% for flashMessage in app.session.flashbag.get('warning') %}
+                        <div class="alert alert-warning" role="alert">
+                            {{ flashMessage }}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="col">
+                    {% for flashMessage in app.session.flashbag.get('error') %}
+                        <div class="alert alert-danger" role="alert">
+                            {{ flashMessage }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% block body %}{% endblock %}
+        </main>
+    </div>
+    {% block javascripts %}
+        <script src="{{ asset('build/admin.js') }}" type="text/javascript"></script>
+    {% endblock %}
+</body>
+</html>

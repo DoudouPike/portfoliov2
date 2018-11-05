@@ -27,6 +27,8 @@ class Image
      */
     private $alt;
 
+    private $file;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -55,4 +57,13 @@ class Image
 
         return $this;
     }
+
+    /**
+     * @param mixed $file
+     */
+    public function setFile($file): void
+    {
+        $this->file = $file;
+    }
+
 }
