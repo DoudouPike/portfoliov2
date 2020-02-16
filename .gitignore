@@ -41,3 +41,5 @@ Supprimerait translations/
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-pack ###
+
+src/Migrations/

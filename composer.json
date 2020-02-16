@@ -29,7 +29,7 @@
         "symfony/yaml": "*"
     },
     "require-dev": {
-        "sensiolabs/security-checker": "^5.0",
+        "sensiolabs/security-checker": "^6.0",
         "symfony/dotenv": "*",
         "symfony/profiler-pack": "*",
         "symfony/test-pack": "*",
@@ -78,7 +78,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "4.1.*"
+            "require": "5.0.*"
         }
     }
 }
